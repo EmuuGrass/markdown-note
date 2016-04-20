@@ -1,0 +1,48 @@
+$ git config --global user.name "John Smith" 
+$ git config --global user.email "johnsmith@gmail.com" 
+
+如果你需要对本地某个项目目录使用Git进行管理，那么进入到项目目录然后使用init命令：
+
+git init
+
+https://github.com/EmuuGrass/beauty.git
+git clone得到的是一个包含了某一个版本的文件内容（Working Copy）以及完整的Git版本控制库(.git目录)的文件夹。git clone的用法如下：
+
+$ git clone <repo url> 
+
+
+git status
+git add <fileName>
+git commit -m <message>
+git add .
+git commit -a  -m <message>
+git log
+
+git remote命令提供了和其他仓库进行交互的功能，如果我们需要和GitHub上的中央服务器进行交互，那么首先需要将它添加到本地的remote列表中：git remote add <name> <url>
+$ git remote -v  查看remote仓库列表：
+
+git push <remote> <branch>
+
+git pull
+
+git checkout -b dev  创建dev分支  -b参数表示创建并切换，相当于以下两条命令“
+git branch dev   git checkout dev
+
+git branch   查看当前分支
+
+git checkout master 回到主分支
+
+git merge dev  将dev工作成果合并到master分支上
+
+git branch -d dev  删除dev分支
+
+git log --graph 可以看到分支合并图
+
+
+
+
+
+
+ 注意
+
+git commit命令的-a参数表示忽略当前暂存区的内容，将Git已经跟踪管理的文件的所有变更直接提交到版本控制库。另一方面，如果尚未被Git跟踪管理的文件，-a参数是不起作用的，还是需要通过git add将他们加入暂存区
