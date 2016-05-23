@@ -13,3 +13,5 @@ transientÊÇJavaÓïÑÔµÄ¹Ø¼ü×Ö£¬ÓÃÀ´±íÊ¾Ò»¸öÓò²»ÊÇ¸Ã¶ÔÏó´®ÐÐ»¯µÄÒ»²¿·Ö¡£µ±Ò»¸ö¶ÔÏó±
 
 JDKµÄ¶¯Ì¬´úÀí»úÖÆÖ»ÄÜ´úÀíÊµÏÖÁË½Ó¿ÚµÄÀà£¬¶ø²»ÄÜÊµÏÖ½Ó¿ÚµÄÀà¾Í²»ÄÜÊµÏÖJDKµÄ¶¯Ì¬´úÀí£¬cglibÊÇÕë¶ÔÀàÀ´ÊµÏÖ´úÀíµÄ£¬ËûµÄÔ­ÀíÊÇ¶ÔÖ¸¶¨µÄÄ¿±êÀàÉú³ÉÒ»¸ö×ÓÀà£¬²¢¸²¸ÇÆäÖÐ·½·¨ÊµÏÖÔöÇ¿£¬µ«ÒòÎª²ÉÓÃµÄÊÇ¼Ì³Ð£¬ËùÒÔ²»ÄÜ¶ÔfinalÐÞÊÎµÄÀà½øÐÐ´úÀí¡£
 
+²»¿ÉÖØ¸´¶ÁÊÇupdate²Ù×÷Ôì³ÉµÄ£¬»Ã¶ÁÊÇinsert²Ù×÷µ¼ÖÂµÄ£¬×îºó¶¼ÊÇÁ½´Î¶ÁÈ¡µÄÊý¾Ý²»Ò»ÖÂ¡£
+
