@@ -15,3 +15,4 @@ JDK的动态代理机制只能代理实现了接口的类，而不能实现接口的类就不能实现JDK的动态代
 
 不可重复读是update操作造成的，幻读是insert操作导致的，最后都是两次读取的数据不一致。
 
+java.util.List实现了java.lang.Iterable接口.jdk api文档中是这样描述Iterable接口的：实现这个接口允许对象成为 "foreach" 语句的目标。
