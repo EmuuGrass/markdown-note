@@ -1,12 +1,12 @@
-$ git config --global user.name "John Smith" 
-$ git config --global user.email "johnsmith@gmail.com" 
+$ git config --global user.name "EmuuGrass" 
+$ git config --global user.email "453394245@qq.com" 
 
-Èç¹ûÄãĞèÒª¶Ô±¾µØÄ³¸öÏîÄ¿Ä¿Â¼Ê¹ÓÃGit½øĞĞ¹ÜÀí£¬ÄÇÃ´½øÈëµ½ÏîÄ¿Ä¿Â¼È»ºóÊ¹ÓÃinitÃüÁî£º
+å¦‚æœä½ éœ€è¦å¯¹æœ¬åœ°æŸä¸ªé¡¹ç›®ç›®å½•ä½¿ç”¨Gitè¿›è¡Œç®¡ç†ï¼Œé‚£ä¹ˆè¿›å…¥åˆ°é¡¹ç›®ç›®å½•ç„¶åä½¿ç”¨initå‘½ä»¤ï¼š
 
 git init
 
 https://github.com/EmuuGrass/beauty.git
-git cloneµÃµ½µÄÊÇÒ»¸ö°üº¬ÁËÄ³Ò»¸ö°æ±¾µÄÎÄ¼şÄÚÈİ£¨Working Copy£©ÒÔ¼°ÍêÕûµÄGit°æ±¾¿ØÖÆ¿â(.gitÄ¿Â¼)µÄÎÄ¼ş¼Ğ¡£git cloneµÄÓÃ·¨ÈçÏÂ£º
+git cloneå¾—åˆ°çš„æ˜¯ä¸€ä¸ªåŒ…å«äº†æŸä¸€ä¸ªç‰ˆæœ¬çš„æ–‡ä»¶å†…å®¹ï¼ˆWorking Copyï¼‰ä»¥åŠå®Œæ•´çš„Gitç‰ˆæœ¬æ§åˆ¶åº“(.gitç›®å½•)çš„æ–‡ä»¶å¤¹ã€‚git cloneçš„ç”¨æ³•å¦‚ä¸‹ï¼š
 
 $ git clone <repo url> 
 
@@ -18,31 +18,31 @@ git add .
 git commit -a  -m <message>
 git log
 
-git remoteÃüÁîÌá¹©ÁËºÍÆäËû²Ö¿â½øĞĞ½»»¥µÄ¹¦ÄÜ£¬Èç¹ûÎÒÃÇĞèÒªºÍGitHubÉÏµÄÖĞÑë·şÎñÆ÷½øĞĞ½»»¥£¬ÄÇÃ´Ê×ÏÈĞèÒª½«ËüÌí¼Óµ½±¾µØµÄremoteÁĞ±íÖĞ£ºgit remote add <name> <url>
-$ git remote -v  ²é¿´remote²Ö¿âÁĞ±í£º
+git remoteå‘½ä»¤æä¾›äº†å’Œå…¶ä»–ä»“åº“è¿›è¡Œäº¤äº’çš„åŠŸèƒ½ï¼Œå¦‚æœæˆ‘ä»¬éœ€è¦å’ŒGitHubä¸Šçš„ä¸­å¤®æœåŠ¡å™¨è¿›è¡Œäº¤äº’ï¼Œé‚£ä¹ˆé¦–å…ˆéœ€è¦å°†å®ƒæ·»åŠ åˆ°æœ¬åœ°çš„remoteåˆ—è¡¨ä¸­ï¼šgit remote add <name> <url>
+$ git remote -v  æŸ¥çœ‹remoteä»“åº“åˆ—è¡¨ï¼š
 
 git push <remote> <branch>
 
 git pull
 
-git checkout -b dev  ´´½¨dev·ÖÖ§  -b²ÎÊı±íÊ¾´´½¨²¢ÇĞ»»£¬Ïàµ±ÓÚÒÔÏÂÁ½ÌõÃüÁî¡°
+git checkout -b dev  åˆ›å»ºdevåˆ†æ”¯  -bå‚æ•°è¡¨ç¤ºåˆ›å»ºå¹¶åˆ‡æ¢ï¼Œç›¸å½“äºä»¥ä¸‹ä¸¤æ¡å‘½ä»¤â€œ
 git branch dev   git checkout dev
 
-git branch   ²é¿´µ±Ç°·ÖÖ§
+git branch   æŸ¥çœ‹å½“å‰åˆ†æ”¯
 
-git checkout master »Øµ½Ö÷·ÖÖ§
+git checkout master å›åˆ°ä¸»åˆ†æ”¯
 
-git merge dev  ½«dev¹¤×÷³É¹ûºÏ²¢µ½master·ÖÖ§ÉÏ
+git merge dev  å°†devå·¥ä½œæˆæœåˆå¹¶åˆ°masteråˆ†æ”¯ä¸Š
 
-git branch -d dev  É¾³ıdev·ÖÖ§
+git branch -d dev  åˆ é™¤devåˆ†æ”¯
 
-git log --graph ¿ÉÒÔ¿´µ½·ÖÖ§ºÏ²¢Í¼
-
-
+git log --graph å¯ä»¥çœ‹åˆ°åˆ†æ”¯åˆå¹¶å›¾
 
 
 
 
- ×¢Òâ
 
-git commitÃüÁîµÄ-a²ÎÊı±íÊ¾ºöÂÔµ±Ç°Ôİ´æÇøµÄÄÚÈİ£¬½«GitÒÑ¾­¸ú×Ù¹ÜÀíµÄÎÄ¼şµÄËùÓĞ±ä¸üÖ±½ÓÌá½»µ½°æ±¾¿ØÖÆ¿â¡£ÁíÒ»·½Ãæ£¬Èç¹ûÉĞÎ´±»Git¸ú×Ù¹ÜÀíµÄÎÄ¼ş£¬-a²ÎÊıÊÇ²»Æğ×÷ÓÃµÄ£¬»¹ÊÇĞèÒªÍ¨¹ıgit add½«ËûÃÇ¼ÓÈëÔİ´æÇø
+
+ æ³¨æ„
+
+git commitå‘½ä»¤çš„-aå‚æ•°è¡¨ç¤ºå¿½ç•¥å½“å‰æš‚å­˜åŒºçš„å†…å®¹ï¼Œå°†Gitå·²ç»è·Ÿè¸ªç®¡ç†çš„æ–‡ä»¶çš„æ‰€æœ‰å˜æ›´ç›´æ¥æäº¤åˆ°ç‰ˆæœ¬æ§åˆ¶åº“ã€‚å¦ä¸€æ–¹é¢ï¼Œå¦‚æœå°šæœªè¢«Gitè·Ÿè¸ªç®¡ç†çš„æ–‡ä»¶ï¼Œ-aå‚æ•°æ˜¯ä¸èµ·ä½œç”¨çš„ï¼Œè¿˜æ˜¯éœ€è¦é€šè¿‡git addå°†ä»–ä»¬åŠ å…¥æš‚å­˜åŒº
