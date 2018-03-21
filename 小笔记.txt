@@ -1,18 +1,20 @@
-StringBuffer ���̰߳�ȫ�ġ�����StringBuilderִ���ٶȿ졣
+StringBuffer 是线程安全的。但是StringBuilder执行速度快。
 
-���ñ�����final����֮����Ȼ������ָ���������󣬵�����ָ��Ķ���������ǿɱ�ġ�
+引用变量被final修饰之后，虽然不能再指向其他对象，但是它指向的对象的内容是可变的。
 
-��Ա�ڲ�����������������ⲿ������г�Ա���Ժͳ�Ա����������private��Ա�;�̬��Ա����
+成员内部类可以无条件访问外部类的所有成员属性和成员方法（包括private成员和静态成员）。
 
-���ⲿ�������Ҫ���ʳ�Ա�ڲ���ĳ�Ա�������ȴ���һ����Ա�ڲ���Ķ�����ͨ��ָ�������������������ʡ�
+在外部类中如果要访问成员内部类的成员，必须先创建一个成员内部类的对象，再通过指向这个对象的引用来访问。
 
-Java��serialization�ṩ��һ�ֳ־û�����ʵ���Ļ��ơ����־û�����ʱ��������һ������Ķ������ݳ�Ա�����ǲ�����serialization��������������Ϊ����һ���ض������һ�����Ϲر�serialization�������������ǰ���Ϲؼ���transient��   
-transient��Java���ԵĹؼ��֣�������ʾһ�����Ǹö����л���һ���֡���һ�����󱻴��л���ʱ��transient�ͱ�����ֵ�������ڴ��л��ı�ʾ�У�Ȼ����transient�͵ı����Ǳ�������ȥ�ġ�
+Java的serialization提供了一种持久化对象实例的机制。当持久化对象时，可能有一个特殊的对象数据成员，我们不想用serialization机制来保存它。为了在一个特定对象的一个域上关闭serialization，可以在这个域前加上关键字transient。   
+transient是Java语言的关键字，用来表示一个域不是该对象串行化的一部分。当一个对象被串行化的时候，transient型变量的值不包括在串行化的表示中，然而非transient型的变量是被包括进去的。
 
-��һ������������volatile����ʱ�����ᱣ֤�޸ĵ�ֵ�����������µ����棬���������߳���Ҫ��ȡʱ������ȥ�ڴ��ж�ȡ��ֵ�������������ܱ�֤ԭ���ԡ�
+当一个共享变量被volatile修饰时，它会保证修改的值会立即被更新到主存，当有其他线程需要读取时，它会去内存中读取新值。但是它并不能保证原子性。
 
-JDK�Ķ�̬��������ֻ�ܴ���ʵ���˽ӿڵ��࣬������ʵ�ֽӿڵ���Ͳ���ʵ��JDK�Ķ�̬������cglib���������ʵ�ִ����ģ�����ԭ���Ƕ�ָ����Ŀ��������һ�����࣬���������з���ʵ����ǿ������Ϊ���õ��Ǽ̳У����Բ��ܶ�final���ε�����д�����
+JDK的动态代理机制只能代理实现了接口的类，而不能实现接口的类就不能实现JDK的动态代理，cglib是针对类来实现代理的，他的原理是对指定的目标类生成一个子类，并覆盖其中方法实现增强，但因为采用的是继承，所以不能对final修饰的类进行代理。
 
-�����ظ�����update������ɵģ��ö���insert�������µģ���������ζ�ȡ�����ݲ�һ�¡�
+不可重复读是update操作造成的，幻读是insert操作导致的，最后都是两次读取的数据不一致。
 
-java.util.Listʵ����java.lang.Iterable�ӿ�.jdk api�ĵ�������������Iterable�ӿڵģ�ʵ������ӿ����������Ϊ "foreach" ����Ŀ�ꡣ
+java.util.List实现了java.lang.Iterable接口.jdk api文档中是这样描述Iterable接口的：实现这个接口允许对象成为 "foreach" 语句的目标。
+
+test
